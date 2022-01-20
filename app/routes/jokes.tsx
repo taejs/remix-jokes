@@ -35,7 +35,7 @@ export default function JokesRoute() {
       <header className="jokes-header">
         <div className="container">
           <h1 className="home-link">
-            <Link to="/" title="Remix Jokes" aria-label="Remix Jokes">
+            <Link to="/" title="Remix Jokes" aria-label="Remix Jokes" prefetch="intent">
               <span className="logo">🤪</span>
               <span className="logo-medium">J🤪KES</span>
             </Link>
@@ -50,7 +50,9 @@ export default function JokesRoute() {
             <ul>
               {data.jokeListItems.map((joke) => (
                 <li key={joke.id}>
-                  <Link to={joke.id}>{joke.name}</Link>
+                  <Link to={joke.id} prefetch="intent">
+                    {joke.name}
+                  </Link>
                 </li>
               ))}
             </ul>
