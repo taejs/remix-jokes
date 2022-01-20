@@ -9,4 +9,4 @@ This enables you to co-locate everything about a data set in a single route modu
 비동기 관련 코드를 더이상 추가할 필요는 없다.
 
 ## 느낀점
-- 정말 생 html 파일을 여는것처럼 빠릿하다..! 
+- 정말 생 html 파일을 여는것처럼 빠릿하다..! 사용자 경험 상향평준화를 일으킬거같다. 
